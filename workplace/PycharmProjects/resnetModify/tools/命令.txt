@@ -1,0 +1,20 @@
+
+训练
+python tools/train.py configs/resnext/resnext.py --work-dir work_dirs/resnext20221124
+
+测试
+python tools/test.py work_dirs/resnext20221124-3090/resnext.py  work_dirs/resnext20221124-3090/latest.pth --out out/seresnet.pkl
+
+可视化accuracy_top
+python tools/analysis_tools/analyze_logs.py plot_curve work_dirs/resnext20221124-3090/20221124_183504.log.json --keys accuracy_top-1 accuracy_top-5  --legend top1 top5 --out out/results.jpg
+
+可视化loss
+python tools/analysis_tools/analyze_logs.py plot_curve work_dirs/resnext20221124-3090/20221124_183504.log.json --keys loss --legend loss
+
+评估
+python tools/analysis_tools/eval_metric.py work_dirs/resnext20221124-3090/resnext.py out/seresnet.pkl --metrics accuracy precision recall f1_score support --metric-options "topk=(1,5)"
+{'accuracy_top-1': 86.27999877929688, 'accuracy_top-5': 97.91999816894531, 'support': 10000.0, 'precision': 86.37994961932162, 'recall': 86.28, 'f1_score': 86.26736535087527}
+
+
+可视化学习率
+python tools/visualizations
