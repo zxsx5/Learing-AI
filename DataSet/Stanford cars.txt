@@ -1,0 +1,43 @@
+%0 
+%0 Conference Proceedings
+%A Krause, Jonathan; Stark, Michael; Deng, Jia & Fei-Fei, Li
+%D 2013
+%T 3D Object Representations for Fine-Grained Categorization
+%E 
+%B 4th International IEEE Workshop on 3D Representation and Recognition (3dRR-13)
+%C Sydney, Australia
+%I 
+%V 
+%6
+%N
+%P 
+%&
+%Y 
+%S 
+%7
+%8 
+%9
+%?
+%! 
+%Z
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 inproceedings
+%4 
+%# 
+%$ 
+%F KrauseStarkDengFei-Fei_3DRR2013
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
